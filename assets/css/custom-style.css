@@ -1,0 +1,115 @@
+.menu__item.off{
+    display: none;
+}
+.menu__submenu-item.off{
+    display: none;
+}
+.menu-mobile__item.off{
+    display: none;
+}
+.menu-mobile__submenu-item.off{
+    display: none;
+}
+.wpcf7.no-js{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.wpcf7.no-js>p{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 26px;
+    row-gap: 30px;
+}
+.wpcf7-form-control-wrap {
+    display: flex;
+    position: relative;
+}
+.wpcf7-form-control-wrap:nth-child(1),
+.wpcf7-form-control-wrap:nth-child(2){
+    width: calc(55% - 46px);
+}
+.wpcf7-form-control-wrap:nth-child(3),
+.wpcf7-form-control-wrap:nth-child(4),
+.wpcf7-form-control-wrap:nth-child(5){
+    width: calc(37% - 46px);
+}
+.wpcf7-form-control-wrap input{
+    width: 100%;
+}
+.wpcf7.js{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.wpcf7-form.init{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.wpcf7-form.init>p,
+.wpcf7-form.failed>p,
+.wpcf7-form.submitting>p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.footer__subscribe-form>.wpcf7.no-js p{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    column-gap: 0px;
+    row-gap: 30px;
+}
+.footer__subscribe-form>.wpcf7.no-js p .wpcf7-form-control-wrap{
+    width: 70%;
+}
+.footer__subscribe-form>.wpcf7.no-js p .footer__subscribe-form-button{
+    width: 30%;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+@media (max-width: 991.98px){
+    .form__top{
+        margin-top: 20px;
+    }
+    .form__box {
+        padding: 50px;
+        width: calc(100% - 100px);
+    }
+    .wpcf7.no-js>p{
+        justify-content: flex-start;
+    }
+    .wpcf7-form-control-wrap:nth-child(1),
+    .wpcf7-form-control-wrap:nth-child(2),
+    .wpcf7-form-control-wrap:nth-child(3),
+    .wpcf7-form-control-wrap:nth-child(4),
+    .wpcf7-form-control-wrap:nth-child(5){
+        width: 100%;
+    }
+}
+@media (max-width: 767.98px){
+    .footer__subscribe-form>.wpcf7.no-js p .wpcf7-form-control-wrap{
+        width: 100%;
+    }
+    .footer__subscribe-form>.wpcf7.no-js p .footer__subscribe-form-button{
+        width: 100%;
+    }
+}
+@media (max-width: 479.98px){
+    .form__box {
+        padding: 40px 30px 40px 30px;
+        width: calc(100% - 60px);
+    }
+}
